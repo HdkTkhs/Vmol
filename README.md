@@ -1,9 +1,9 @@
 Sep. 2nd, 2026  
-Hideaki Takahashi,  
-Tohoku University,   
+Hideaki Takahashi,
+Tohoku University, 
 Sendai, Japan
 
-# Overview 
+# Current distribution of Vmol
 'Vmol' is a software[1,2] written with Fortran for the electronic density-functional theory (DFT) based on the real-space grid formalism[3]. 
 'Vmol' was originally combined with codes (produced by third parties) for the classical molecular dynamics method to 
 build a QM/MM simulator[2]. However, in the current distribution, only the core of the 'Vmol' is being placed on GitHub. 
@@ -11,7 +11,7 @@ Thus, only the original Kohn Sham-DFT[4] machinery has been extracted from the i
 functions equipped on the code has been disabled. In the following, we listed several features of the present distribution.
 * Optimized-effective potential for Hartree-Fock method (HF-OEP)[5]  
   'Vmol' at the present distribution is specific to a parallelized HF-OEP calculation[6] using MPI libraries. 
-* For the parallel execution of HF calculation[7], f90 module: poisson_solver.f90 ([by S. Sakuraba](https://github.com/shunsakuraba/poisson_solver)) is to be invoked.
+* For the parallel execution of HF calculation[7], f90 module: [poisson_solver.f90](https://github.com/shunsakuraba/poisson_solver) is to be invoked.
 * The 'Vmol' on the GitHub is specifically edited to perform the HF calculation that is followed by HF-OEP. However, it can also be
   used for normal KS-DFT calculations with slight modifications of the code.  
 * The external subroutines and functions made by others were also excluded in the distribution. The names of the routines
@@ -39,7 +39,16 @@ of Hartree−Fock exchange energy on real-space grids using
 3D-parallel fast Fourier transform,” J. Chem. Inf. Model 60, 1376–1389
 (2020).
 
-
-
-
-
+# Prerequisite 
+* Compilation of 'Vmol' requires that [FFTW](https://www.fftw.org) and [pFFT](https://github.com/mpip/pfft) are being installed. 
+* Compilation of 'Vmol' requires Intel Math Kernel Libraries (MKL). 
+* At the end of the 'Vmol' source code, 'Vmol' includes 'ext_routines.f' file (not provided in the library), to incorporates the subroutines and functions
+  provided in 'Numerical Recipes' by William H. Press, et al (Cambridge University Press). Explicitly, it contains the following programs:
+  1. LSFIT.f (Least-Square Fitting)
+  2. GAUSSJ.f (matrix inversion using Gauss Jordan elimination)
+  3. POLINT.f (Polynomial interpolation)
+  4. DDPOLY.f (Evaluation of derivative of a given polynomial)
+  5. POLCOE.f (Polynomial coefficients)
+  Most of these routines can be equivalently replaced by those included in MKL.   
+* 'ext_routines.f' also includes functions: RANFQ.f and GAUSS.f. RANFQ.f generates random real numbers R(0<R<1), while GAUSS.f generates
+  random real numbers which forms a Gaussian distribution.     
