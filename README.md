@@ -11,5 +11,6 @@ Thus, only the original Kohn Sham-DFT machinery has been extracted from an integ
 functions equipped on the code has been disabled. In the following, we listed several features of the present distribution.
 * Optimized-effective potential for Hartree-Fock method (HF-OEP)  
   'Vmol' at the present distribution is specific to a parallelized HF-OEP calculation using MPI libraries. 
-* For the parallel execution of HF calculation, 
+* For the parallel execution of HF calculation, f90 module: poisson_solver.f90 ([by S. Sakuraba](https://github.com/shunsakuraba/poisson_solver)) is to be invoked.
+*   
 
