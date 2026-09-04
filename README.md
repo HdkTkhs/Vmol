@@ -16,7 +16,6 @@ functions equipped on the code has been disabled. In the following, we listed se
   used for normal KS-DFT calculations with slight modifications of the code.  
 * The external subroutines and functions made by others were also excluded in the distribution. The names of the routines
   and the functions are provided below.
-
 ---------------------------------------------------------  
 [1] H. Takahashi, T. Hori, T. Wakabayashi, and T. Nitta, “Real space ab initio
 molecular dynamics simulations for the reactions of OH radical/OH anion
@@ -37,7 +36,7 @@ Kohn–Sham method for Hartree–Fock exchange energy,” J. Chem. Phys.
 [7] H. Takahashi, S. Sakuraba, and A. Morita, “Large-scale parallel implementation 
 of Hartree−Fock exchange energy on real-space grids using
 3D-parallel fast Fourier transform,” J. Chem. Inf. Model 60, 1376–1389
-(2020).
+(2020).  
 
 # Prerequisite 
 * Compilation of 'Vmol' requires that [FFTW](https://www.fftw.org) and [pFFT](https://github.com/mpip/pfft) are being installed. 
@@ -53,4 +52,4 @@ of Hartree−Fock exchange energy on real-space grids using
 * The file 'ext_routines.f' also includes functions: RANFQ.f and GAUSS.f. RANFQ.f generates random real numbers R(0<R<1), while GAUSS.f generates
   random real numbers which forms a Gaussian distribution. RANFQ.f can be equivalently replaced by the intrinsic function 'random_number(r)' in Intel Fortran.
   GAUSS.f might be also replaced by a function in MKL. Note, however, that KS-DFT calculation does not use GAUSS.f. Thus, the processes related to GAUSS.f can
-  be omitted for the KS-DFT calculation.            
+  be safely omitted for the KS-DFT calculation.             
