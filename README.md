@@ -4,11 +4,10 @@ Tohoku University,
 Sendai, Japan
 
 # Current distribution of Vmol
-'Vmol' is a software[1,2] written with Fortran for the electronic density-functional theory (DFT) based on the real-space grid formalism[3]. 
-'Vmol' was originally combined with codes (produced by third parties) for the classical molecular dynamics method to 
-build a QM/MM simulator[2]. However, in the current distribution, only the core of the 'Vmol' is being placed on GitHub. 
-Thus, only the original Kohn Sham-DFT[4] machinery has been extracted from the integrated code. As a consequence, a lot of 
-functions equipped on the code has been disabled. In the following, we listed several features of the present distribution.
+'Vmol' is a code[1,2] written in Fortran for the electronic density-functional theory (DFT) based on the real-space grid formalism[3]. 
+'Vmol' was originally combined with classical molecular dynamics codes (produced by third parties) to 
+build a QM/MM simulator[2]. However, only the original Kohn Sham-DFT[4] machinery has been extracted from the integrated code. Thus, in the current distribution, only the core of the 'Vmol' has been placed on GitHub. 
+As a consequence, a lot of functions equipped on the original code has been disabled. In the following, we listed several features of the present distribution.
 * Optimized-effective potential for Hartree-Fock method (HF-OEP)[5]  
   'Vmol' at the present distribution is specific to a parallelized HF-OEP calculation[6] using MPI libraries. 
 * For the parallel execution of HF calculation[7], f90 module: [poisson_solver.f90](https://github.com/shunsakuraba/poisson_solver) is to be invoked.
