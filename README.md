@@ -55,5 +55,5 @@ of Hartree−Fock exchange energy on real-space grids using
   be safely omitted for the sole purpose to perform the KS-DFT calculation.
 
 # Compile and link
-Provided that the prerequisites noted above are fulfilled, 'Vmol' can be compiled and link by invoking 
-the script Compile.exe in Vmol_src/   
+Provided that the prerequisites noted above are fulfilled, 'Vmol' can be compiled and linked by invoking 
+the script Compile.exe in Vmol_src/ .  
