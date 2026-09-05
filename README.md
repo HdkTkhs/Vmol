@@ -40,15 +40,16 @@ of Hartree−Fock exchange energy on real-space grids using
 # Prerequisite 
 * Compilation of 'Vmol' requires that [FFTW](https://www.fftw.org) and [pFFT](https://github.com/mpip/pfft) are being installed. 
 * Compilation of 'Vmol' requires Intel Math Kernel Libraries (MKL). 
-* At the end of the 'Vmol' source code, 'Vmol' includes 'ext_routines.f' file (not provided in the library), to incorporates the subroutines and functions
+* At the end of the 'Vmol' source code, 'Vmol' includes 'ext_routines.f' file (not provided in the distribution), to incorporates the subroutines and functions
   provided in 'Numerical Recipes' by William H. Press, et al (Cambridge University Press). Explicitly, it contains the following programs:
   1. LSFIT.f (Least-Square Fitting)
   2. GAUSSJ.f (matrix inversion using Gauss Jordan elimination)
   3. POLINT.f (Polynomial interpolation)
   4. DDPOLY.f (Evaluation of derivative of a given polynomial)
   5. POLCOE.f (Polynomial coefficients)
-  Most of these routines can be equivalently replaced by those included in MKL.   
-* The file 'ext_routines.f' also includes functions: RANFQ.f and GAUSS.f. RANFQ.f generates random real numbers R(0<R<1), while GAUSS.f generates
-  random real numbers which forms a Gaussian distribution. RANFQ.f can be equivalently replaced by the intrinsic function 'random_number(r)' in Intel Fortran.
+  Most of these routines can be equivalently replaced by those included in MKL.
+  The file 'ext_routines.f', which contains these routines, must be prepared by users. 
+* The file 'ext_routines.f' should also include functions: RANFQ.f and GAUSS.f. RANFQ.f generates random real numbers R(0<R<1), while GAUSS.f generates
+  random real numbers which forms a Gaussian distribution. RANFQ.f can be equivalently replaced by the intrinsic function 'random_number(r)' in Intel Fortran. 
   GAUSS.f might be also replaced by a function in MKL. Note, however, that KS-DFT calculation does not use GAUSS.f. Thus, the processes related to GAUSS.f can
   be safely omitted for the KS-DFT calculation.             
