@@ -47,9 +47,8 @@ of Hartree−Fock exchange energy on real-space grids using
   3. POLINT.f (Polynomial interpolation)
   4. DDPOLY.f (Evaluation of derivative of a given polynomial)
   5. POLCOE.f (Polynomial coefficients)
-  Most of these routines can be equivalently replaced by those included in MKL.
-
-  The file 'ext_routines.f', which contains these routines, must be prepared by users. 
+     
+  Most of these routines can be equivalently replaced by those included in MKL. Anyway, the file 'ext_routines.f', which contains these routines, must be prepared by users. 
 * The file 'ext_routines.f' should also include functions: RANFQ.f and GAUSS.f. RANFQ.f generates random real numbers R(0<R<1), while GAUSS.f generates
   random real numbers which forms a Gaussian distribution. RANFQ.f can be equivalently replaced by the intrinsic function 'random_number(r)' in Intel Fortran. 
   GAUSS.f might be also replaced by a function in MKL. Note, however, that KS-DFT calculation does not use GAUSS.f. Thus, the processes related to GAUSS.f can
