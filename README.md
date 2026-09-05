@@ -54,6 +54,6 @@ of Hartree−Fock exchange energy on real-space grids using
   GAUSS.f might be also replaced by a function in MKL. Note, however, that KS-DFT calculation does not use GAUSS.f. Thus, the processes related to GAUSS.f can
   be safely omitted for the sole purpose to perform the KS-DFT calculation.
 
-# Usage
-Provided that the prerequisites noted above are fulfilled, 'Vmol' can be compiled by invoking 
+# Compile and link
+Provided that the prerequisites noted above are fulfilled, 'Vmol' can be compiled and link by invoking 
 the script Compile.exe in Vmol_src/   
