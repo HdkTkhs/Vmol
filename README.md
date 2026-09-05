@@ -41,7 +41,7 @@ of Hartree−Fock exchange energy on real-space grids using
 * Compilation of 'Vmol' requires that [FFTW](https://www.fftw.org) and [pFFT](https://github.com/mpip/pfft) are being installed. 
 * Compilation of 'Vmol' requires Intel Math Kernel Libraries (MKL).
 * Execution of 'Vmol' requires pseudopotential database [NCPS](http://www.bandstructure.jp/readmee.html).
-* As described by an include sentence at the end of the 'Vmol' source code, 'ext_routines.f' file (**not** provided in the distribution due to the copyright issues) is required to incorporates the miscellaneous external subroutines and functions
+* As described by an include sentence at the end of the 'Vmol' source code, 'ext_routines.f' file (**not** provided in the distribution due to the copyright issues) is required to incorporates the miscellaneous external subroutines and functions into 'Vmol'. These routines are those
   provided in 'Numerical Recipes' by William H. Press, et al (Cambridge University Press). Explicitly, it contains the following programs:
   1. LSFIT.f (Least-Square Fitting)
   2. GAUSSJ.f (matrix inversion using Gauss Jordan elimination)
