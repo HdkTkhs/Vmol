@@ -13,7 +13,7 @@ As a consequence, a lot of functions equipped on the original code has been disa
 * For the parallel execution of HF calculation[7], f90 module: [poisson_solver.f90](https://github.com/shunsakuraba/poisson_solver) is involved. 
 * The 'Vmol' on the GitHub is specifically edited to perform the HF calculation that is followed by HF-OEP. However, it can also be
   used for normal KS-DFT calculations with slight modifications of the code.  
-* The external subroutines and functions made by others were also excluded in the distribution. The names of the routines
+* The external subroutines and functions made by others were also excluded from the original code due to the copyright issues in the distribution. The names of the routines
   and the functions are provided below.
 ---------------------------------------------------------  
 [1] H. Takahashi, T. Hori, T. Wakabayashi, and T. Nitta, “Real space ab initio
