@@ -58,3 +58,4 @@ of Hartree−Fock exchange energy on real-space grids using
 # Compile and link
 Provided that the prerequisites noted above are fulfilled, 'Vmol' can be compiled and linked by invoking 
 the script Compile.exe in Vmol_src/ .  
+```mpif90 -O -c -I/path/to/FFTW/include -I/path/to/pfft/include -std=f2003 poission_solver.F90```
