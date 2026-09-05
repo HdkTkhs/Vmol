@@ -37,7 +37,7 @@ of Hartree−Fock exchange energy on real-space grids using
 3D-parallel fast Fourier transform,” J. Chem. Inf. Model 60, 1376–1389
 (2020).  
 
-# Prerequisite 
+# Prerequisites 
 * Compilation of 'Vmol' requires that [FFTW](https://www.fftw.org) and [pFFT](https://github.com/mpip/pfft) are being installed. 
 * Compilation of 'Vmol' requires Intel Math Kernel Libraries (MKL). 
 * At the end of the 'Vmol' source code, 'Vmol' includes 'ext_routines.f' file (**not** provided in the distribution due to the copyright issues), to incorporates the subroutines and functions
