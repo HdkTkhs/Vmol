@@ -61,7 +61,7 @@ the script Compile.exe in Vmol_src/ .
 ```mpif90 -O -c -I/path/to/FFTW/include -I/path/to/pfft/include -std=f2003 poission_solver.F90```
 
 # Citation
-Please cite the following articles when you use the part of 'Vmol'.
+Please cite the following articles when you use the part of 'Vmol'.  
 [1] H. Takahashi, T. Hori, T. Wakabayashi, and T. Nitta, “Real space ab initio
 molecular dynamics simulations for the reactions of OH radical/OH anion
 with formaldehyde,” J. Phys. Chem. A 105, 4351 (2001).  
