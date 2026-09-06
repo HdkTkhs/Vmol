@@ -54,6 +54,8 @@ As a consequence, a lot of functions equipped on the original code have been dis
   be safely omitted for the sole purpose to perform the KS-DFT calculation.
 
 # Usage
+The specification of the real-space cell containing the uniform grids is provided in the include file 'QMpara.i'. 
+
 
 # Input files
 Running 'Vmol' requires the following input files;
