@@ -54,6 +54,10 @@ As a consequence, a lot of functions equipped on the original code have been dis
   be safely omitted for the sole purpose to perform the KS-DFT calculation.
 
 # Input files
+'Vmol' reads the following input files when it runs;
+ 1. qm.dat
+ 2. basis.dat
+ 3. valence.dat
 
 # Compile and link
 Provided that the prerequisites noted above are fulfilled, 'Vmol' can be compiled and linked by invoking 
