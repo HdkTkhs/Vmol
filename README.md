@@ -19,18 +19,18 @@ As a consequence, a lot of functions equipped on the original code have been dis
 [1] H. Takahashi, T. Hori, T. Wakabayashi, and T. Nitta, “Real space ab initio molecular dynamics simulations  
     for the reactions of OH radical/OH anion with formaldehyde,”  J. Phys. Chem. A 105, 4351 (2001).  
 [2] H. Takahashi, T. Hori, H. Hashimoto, and T. Nitta, “A hybrid QM/MM method employing real space grids   
-for QM water in the TIP4P water solvents,” J. Comp. Chem. 22, 1252–1261 (2001).  
+    for QM water in the TIP4P water solvents,” J. Comp. Chem. 22, 1252–1261 (2001).  
 [3] J. R. Chelikowsky, N. Troullier, and Y. Saad, “Finite-difference pseudopotential method: electronic structure  
-calculations without a basis,” Phys. Rev. Lett. 72, 1240–1243 (1994).  
+    calculations without a basis,” Phys. Rev. Lett. 72, 1240–1243 (1994).  
 [4] W. Kohn and L. J. Sham, “Self-consistent equations including exchange and correlation effects,”  
-Phys. Rev. 140, A1133–A1138 (1965).  
+    Phys. Rev. 140, A1133–A1138 (1965).  
 [5] W. Yang and Q. Wu, “Direct method for optimized effective potentials in density-functional theory,”  
-Phys. Rev. Lett. 89, 143002 (2002).    
+    Phys. Rev. Lett. 89, 143002 (2002).    
 [6] H. Takahashi, “Comparison of optimized effective potential with inverse Kohn–Sham method for Hartree–Fock  
-exchange energy,” J. Chem. Phys. 161, 104108(11) (2024).  
+    exchange energy,” J. Chem. Phys. 161, 104108(11) (2024).  
 [7] H. Takahashi, S. Sakuraba, and A. Morita, “Large-scale parallel implementation of Hartree−Fock  
-exchange energy on real-space grids using 3D-parallel fast Fourier transform,”  
-J. Chem. Inf. Model 60, 1376–1389 (2020).
+    exchange energy on real-space grids using 3D-parallel fast Fourier transform,”  
+    J. Chem. Inf. Model 60, 1376–1389 (2020).
 ```
 
 # Prerequisites 
