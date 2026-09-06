@@ -59,3 +59,20 @@ of Hartree−Fock exchange energy on real-space grids using
 Provided that the prerequisites noted above are fulfilled, 'Vmol' can be compiled and linked by invoking 
 the script Compile.exe in Vmol_src/ .  
 ```mpif90 -O -c -I/path/to/FFTW/include -I/path/to/pfft/include -std=f2003 poission_solver.F90```
+
+# Citation
+Please cite the following articles when you use the part of 'Vmol'.
+[1] H. Takahashi, T. Hori, T. Wakabayashi, and T. Nitta, “Real space ab initio
+molecular dynamics simulations for the reactions of OH radical/OH anion
+with formaldehyde,” J. Phys. Chem. A 105, 4351 (2001).  
+[2] H. Takahashi, T. Hori, H. Hashimoto, and T. Nitta, “A hybrid QM/MM
+method employing real space grids for QM water in the TIP4P water solvents,”
+J. Comp. Chem. 22, 1252–1261 (2001).  
+[3] H. Takahashi, S. Sakuraba, and A. Morita, “Large-scale parallel implementation 
+of Hartree−Fock exchange energy on real-space grids using
+3D-parallel fast Fourier transform,” J. Chem. Inf. Model 60, 1376–1389
+(2020).  
+[4] H. Takahashi, “Comparison of optimized effective potential with inverse
+Kohn–Sham method for Hartree–Fock exchange energy,” J. Chem. Phys.
+161, 104108(11) (2024).  
+
