@@ -56,7 +56,7 @@ As a consequence, a lot of functions equipped on the original code have been dis
 # Input files
 Running 'Vmol' requires the following input files;
   1. qm.dat      (computational settings, molecular specifications, etc)
-  2. PS_DATA/    (pseudopotential database [NCPS](http://www.bandstructure.jp/readmee.html))    
+  2. PS_DATA/    (directory that contains pseudopotential database [NCPS](http://www.bandstructure.jp/readmee.html))    
   3. basis.dat   (LCAO basis set data for constructing initial guess)
   4. valence.dat (LCAO coefficients  )
 
