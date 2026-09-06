@@ -16,9 +16,9 @@ As a consequence, a lot of functions equipped on the original code have been dis
 * The external subroutines and functions made by others were also excluded from the original code due to the copyright issues in the distribution. The names of the routines
   and the functions are provided below.
 ---------------------------------------------------------  
-[1] H. Takahashi, T. Hori, T. Wakabayashi, and T. Nitta, “Real space ab initio
-molecular dynamics simulations for the reactions of OH radical/OH anion
-with formaldehyde,” J. Phys. Chem. A 105, 4351 (2001).  
+[1] H. Takahashi, T. Hori, T. Wakabayashi, and T. Nitta, “Real space ab initio  
+    molecular dynamics simulations for the reactions of OH radical/OH anion  
+    with formaldehyde,” J. Phys. Chem. A 105, 4351 (2001).  
 [2] H. Takahashi, T. Hori, H. Hashimoto, and T. Nitta, “A hybrid QM/MM
 method employing real space grids for QM water in the TIP4P water solvents,”
 J. Comp. Chem. 22, 1252–1261 (2001).  
