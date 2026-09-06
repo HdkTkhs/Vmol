@@ -70,9 +70,9 @@ Please cite the following articles when you use the part of 'Vmol'.
 [2] H. Takahashi, T. Hori, H. Hashimoto, and T. Nitta,  
     “A hybrid QM/MM method employing real space grids for QM water in the TIP4P
     water solvents,” J. Comp. Chem. 22, 1252–1261 (2001).  
-[3] H. Takahashi, S. Sakuraba, and A. Morita, “Large-scale parallel implementation  
-    of Hartree−Fock exchange energy on real-space grids using 3D-parallel fast  
-    Fourier transform,” J. Chem. Inf. Model 60, 1376–1389 (2020).  
+[3] H. Takahashi, S. Sakuraba, and A. Morita,  
+    “Large-scale parallel implementation of Hartree−Fock exchange energy on real-space  
+    grids using 3D-parallel fast Fourier transform,” J. Chem. Inf. Model 60, 1376–1389 (2020).  
 [4] H. Takahashi,  
     “Comparison of optimized effective potential with inverse Kohn–Sham method  
     for Hartree–Fock exchange energy,” J. Chem. Phys. 161, 104108(11) (2024).  
