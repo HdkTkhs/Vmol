@@ -55,9 +55,9 @@ As a consequence, a lot of functions equipped on the original code have been dis
 
 # Input files
 'Vmol' reads the following input files when it runs;
- 1. qm.dat
- 2. basis.dat
- 3. valence.dat
+  1. qm.dat      (computational settings, molecular specifications)      
+  2. basis.dat   
+  3. valence.dat
 
 # Compile and link
 Provided that the prerequisites noted above are fulfilled, 'Vmol' can be compiled and linked by invoking 
