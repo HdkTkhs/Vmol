@@ -3,7 +3,7 @@ Hideaki Takahashi,
 Tohoku University, 
 Sendai, Japan
 
-# Current distribution of Vmol
+# MPI-parallelized Vmol
 'Vmol' is a code[1,2] written in Fortran for the electronic density-functional theory (DFT) calculation based on the real-space grid formalism[3]. 
 'Vmol' had been combined with classical molecular dynamics codes (produced by third parties) to 
 build a QM/MM simulator[2] in the early stage of the development. The current distribution, however, provides only the original Kohn Sham-DFT[4] machinery that has been extracted from the integrated code. Thus, only the core of the 'Vmol' has been placed on GitHub. 
