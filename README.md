@@ -53,10 +53,14 @@ As a consequence, a lot of functions equipped on the original code have been dis
   GAUSS.f might be also replaced by a function in MKL. Note, however, that KS-DFT calculation does not use GAUSS.f. Thus, the processes related to GAUSS.f can
   be safely omitted for the sole purpose to perform the KS-DFT calculation.
 
+# Input files
+
 # Compile and link
 Provided that the prerequisites noted above are fulfilled, 'Vmol' can be compiled and linked by invoking 
 the script Compile.exe in Vmol_src/ .  
 ```mpif90 -O -c -I/path/to/FFTW/include -I/path/to/pfft/include -std=f2003 poission_solver.F90```
+
+# Output files
 
 # Citation
 Please cite the following articles when you use the part of 'Vmol'.  
