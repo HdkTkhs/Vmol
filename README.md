@@ -72,7 +72,7 @@ the script Compile.exe in Vmol_src/ .
 # Output files
 
 # Citation
-Please cite the following articles when you use the part of 'Vmol'.  
+If your work incorporates any part of 'Vmol', please cite the following references:  
 
 ```
 [1] H. Takahashi, T. Hori, T. Wakabayashi, and T. Nitta,  
