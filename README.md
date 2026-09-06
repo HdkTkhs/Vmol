@@ -15,7 +15,7 @@ As a consequence, a lot of functions equipped on the original code have been dis
   used for normal KS-DFT calculations with slight modifications of the code.  
 * The external subroutines and functions made by others were also excluded from the original code due to the copyright issues in the distribution. The names of the routines
   and the functions are provided below.
----------------------------------------------------------  
+```
 [1] H. Takahashi, T. Hori, T. Wakabayashi, and T. Nitta, “Real space ab initio molecular dynamics simulations  
     for the reactions of OH radical/OH anion with formaldehyde,”  J. Phys. Chem. A 105, 4351 (2001).  
 [2] H. Takahashi, T. Hori, H. Hashimoto, and T. Nitta, “A hybrid QM/MM method employing real space grids   
@@ -30,7 +30,8 @@ Phys. Rev. Lett. 89, 143002 (2002).
 exchange energy,” J. Chem. Phys. 161, 104108(11) (2024).  
 [7] H. Takahashi, S. Sakuraba, and A. Morita, “Large-scale parallel implementation of Hartree−Fock  
 exchange energy on real-space grids using 3D-parallel fast Fourier transform,”  
-J. Chem. Inf. Model 60, 1376–1389 (2020).  
+J. Chem. Inf. Model 60, 1376–1389 (2020).
+```
 
 # Prerequisites 
 * Compilation of 'Vmol' requires [FFTW](https://www.fftw.org) and [pFFT](https://github.com/mpip/pfft). 
