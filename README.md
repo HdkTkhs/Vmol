@@ -5,8 +5,8 @@ Sendai, Japan
 
 # MPI-parallelized Vmol
 'Vmol' is a code[1,2] written in Fortran for the electronic density-functional theory (DFT) calculation based on the real-space grid formalism[3]. 
-'Vmol' had been combined with classical molecular dynamics codes (produced by third parties) to 
-build a QM/MM simulator[2] in the early stage of the development. However, the current release only includes the original MPI-parallelized Kohn Sham-DFT[4] module extracted from the integrated code. Thus, the core programs of the 'Vmol' have been placed on GitHub. 
+In the early stage of the development, 'Vmol' had been combined with classical molecular dynamics codes (produced by third parties) to 
+build a QM/MM simulator[2]. However, the current release only includes the original MPI-parallelized Kohn Sham-DFT[4] module extracted from the integrated code. Thus, the core programs of the 'Vmol' have been placed on GitHub. 
 As a consequence, a lot of functions equipped on the original code have been disabled. In the following, we listed several features of the present distribution.
 * Optimized-effective potential for Hartree-Fock method (HF-OEP)[5]  
   'Vmol' at the present distribution is specific to a parallelized HF-OEP calculation[6] using MPI libraries. 
