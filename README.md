@@ -14,7 +14,8 @@ As a consequence, a lot of functions equipped on the original code have been dis
 * The 'Vmol' on the GitHub is specifically edited to perform the HF calculation that is followed by HF-OEP. However, it can also be
   used for normal KS-DFT calculations with slight modifications of the code.  
 * The external subroutines and functions made by others were also excluded from the original code due to the copyright issues in the distribution. The names of the routines
-  and the functions are provided below.
+  and the functions are provided below.  
+References  
 ```
 [1] H. Takahashi, T. Hori, T. Wakabayashi, and T. Nitta, “Real space ab initio molecular dynamics simulations  
     for the reactions of OH radical/OH anion with formaldehyde,”  J. Phys. Chem. A 105, 4351 (2001).  
