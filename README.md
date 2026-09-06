@@ -27,9 +27,8 @@ Phys. Rev. 140, A1133–A1138 (1965).
 [5] W. Yang and Q. Wu, “Direct method for optimized effective potentials in density-functional theory,”  
 Phys. Rev. Lett. 89, 143002 (2002).    
 [6] H. Takahashi, “Comparison of optimized effective potential with inverse Kohn–Sham method for Hartree–Fock  exchange energy,” J. Chem. Phys. 161, 104108(11) (2024).  
-[7] H. Takahashi, S. Sakuraba, and A. Morita, “Large-scale parallel implementation 
-of Hartree−Fock exchange energy on real-space grids using
-3D-parallel fast Fourier transform,” J. Chem. Inf. Model 60, 1376–1389
+[7] H. Takahashi, S. Sakuraba, and A. Morita, “Large-scale parallel implementation of Hartree−Fock  
+exchange energy on real-space grids using 3D-parallel fast Fourier transform,” J. Chem. Inf. Model 60, 1376–1389
 (2020).  
 
 # Prerequisites 
