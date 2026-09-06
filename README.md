@@ -54,7 +54,7 @@ As a consequence, a lot of functions equipped on the original code have been dis
   be safely omitted for the sole purpose to perform the KS-DFT calculation.
 
 # Usage
-The specification of the real-space cell containing the uniform grids is provided in the include file 'QMpara.i'. The form of the grid is assumed to be cubic in our implementation. The include file 'mpi.i'   
+The specification of the real-space cell containing the uniform grids is provided in the include file 'QMpara.i'. The form of the grid is assumed to be cubic in our implementation. The include file 'mpi.i' specifies the numbers of divisions of the rectangular cell along x,y, and z directions to define subdomains for MPI parallel calculation.     
 
 
 # Input files
