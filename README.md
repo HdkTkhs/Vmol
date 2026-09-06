@@ -57,8 +57,8 @@ As a consequence, a lot of functions equipped on the original code have been dis
 Running 'Vmol' requires the following input files;
   1. qm.dat      (computational settings, molecular specifications, etc)
   2. PS_DATA/    (directory that contains pseudopotential database [NCPS](http://www.bandstructure.jp/readmee.html))    
-  3. basis.dat   (LCAO basis set data for constructing initial guess of the wave functions )
-  4. valence.dat (LCAO coefficients for constructing initial guess of the wave functions )
+  3. basis.dat   (LCAO basis set data for constructing initial guesses of the wave functions )
+  4. valence.dat (LCAO coefficients for constructing initial guesses of the wave functions )
 
 # Compile and link
 Provided that the prerequisites noted above are fulfilled, 'Vmol' can be compiled and linked by invoking 
