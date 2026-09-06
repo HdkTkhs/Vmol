@@ -53,6 +53,8 @@ As a consequence, a lot of functions equipped on the original code have been dis
   GAUSS.f might be also replaced by a function in MKL. Note, however, that KS-DFT calculation does not use GAUSS.f. Thus, the processes related to GAUSS.f can
   be safely omitted for the sole purpose to perform the KS-DFT calculation.
 
+# Usage
+
 # Input files
 Running 'Vmol' requires the following input files;
   1. qm.dat      (computational settings, molecular specifications, etc)
