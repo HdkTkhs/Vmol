@@ -20,11 +20,10 @@ As a consequence, a lot of functions equipped on the original code have been dis
     for the reactions of OH radical/OH anion with formaldehyde,”  J. Phys. Chem. A 105, 4351 (2001).  
 [2] H. Takahashi, T. Hori, H. Hashimoto, and T. Nitta, “A hybrid QM/MM method employing real space grids   
 for QM water in the TIP4P water solvents,” J. Comp. Chem. 22, 1252–1261 (2001).  
-[3] J. R. Chelikowsky, N. Troullier, and Y. Saad, “Finite-difference pseudopotential 
-method: electronic structure calculations without a basis,” Phys.
-Rev. Lett. 72, 1240–1243 (1994).  
-[4] W. Kohn and L. J. Sham, “Self-consistent equations including exchange
-and correlation effects,” Phys. Rev. 140, A1133–A1138 (1965).  
+[3] J. R. Chelikowsky, N. Troullier, and Y. Saad, “Finite-difference pseudopotential method: electronic structure  
+calculations without a basis,” Phys. Rev. Lett. 72, 1240–1243 (1994).  
+[4] W. Kohn and L. J. Sham, “Self-consistent equations including exchange and correlation effects,”  
+Phys. Rev. 140, A1133–A1138 (1965).  
 [5] W. Yang and Q. Wu, “Direct method for optimized effective potentials in
 density-functional theory,” Phys. Rev. Lett. 89, 143002 (2002).    
 [6] H. Takahashi, “Comparison of optimized effective potential with inverse
