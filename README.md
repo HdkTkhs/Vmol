@@ -161,7 +161,7 @@ Running 'Vmol' requires the following input files;
       0.4755000000D+02  0.2359629851D+00   
       0.1676000000D+02  0.4426534455D+00   
       0.6207000000D+01  0.3570644227D+00   
- ........
+      ........   
      ```
   6. valence.dat (LCAO coefficients for constructing initial guesses of the wave functions )
 
