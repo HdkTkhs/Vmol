@@ -232,11 +232,11 @@ $FC $FFLAGS $ftrn_prgm.o oep.o poisson_solver.o -L$PFFT_DIR -lpfft -L$FFTW_DIR -
   ```
     Total OEP Energy (a.u.) =    -16.8814430
   ```
-  after 460 SCF iterations. Thus, the energy difference between E(RHF) and E(HF-OEP) is found to be 2.37 mHartree, which shows an agreement with the value provided 
+  after 460 SCF iterations. Thus, the energy difference between E(HF-OEP) and E(RHF) is found to be 2.37 mHartree, which shows an agreement with the value provided 
   in Table I of Ref. [6] in the reference list described above.     
 
 # Notes
-  As noted above, to determine the boundary conditions of the Hartree potential, the fractional charge on each atom is optimized through a least-square fittings. To do this, the sampling points are randomly chosen from the grid points in the QM cell.    
+  As noted above, to determine the boundary conditions of the Hartree potential, the fractional charge on each atom is optimized through a least-square fittings. To do this, the sampling points are randomly chosen from the grid points in the QM cell. Thus, the total energy will vary slightly from run to run because the sampling points change. However, we find that the difference E(HF-OEP)-E(RHF) is hardly affected.        
 
 # Citation
   If your work incorporates any part of 'Vmol', please cite the following references:  
