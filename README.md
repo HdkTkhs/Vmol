@@ -36,7 +36,7 @@ As a consequence, a lot of functions equipped on the original code have been dis
 ```
 
 # Prerequisites 
-* Compilation of 'Vmol' requires [FFTW](https://www.fftw.org) and [pFFT](https://github.com/mpip/pfft). 
+* Compilation of 'Vmol' requires [FFTW](https://www.fftw.org) and [PFFT](https://github.com/mpip/pfft). 
 * Compilation of 'Vmol' requires Intel Math Kernel Libraries (MKL).
 * Execution of 'Vmol' requires pseudopotential database [NCPS](http://www.bandstructure.jp/readmee.html).
 * As indicated by an include sentence placed at the end of the 'Vmol' source code, 'ext_routines.f' file (**not** provided in the distribution due to the copyright issues) is required to incorporates the miscellaneous external subroutines and functions into 'Vmol'. The subroutines are those
