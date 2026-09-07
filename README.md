@@ -143,10 +143,10 @@ Running 'Vmol' requires the following input files;
 
 ! Units are in atomic units.
 
-! The LJ parameters (sigma and epsilon) can be somewhat arbitrary chosen because this input file is
+! The LJ parameters (sigma and epsilon) can be chosen somewhat arbitrarily because this input file is
 ! for one-point calculations at its isolation. Note, however, the LJ-sigma parameters are used in the OPTFC.f
 ! or OPTFC1.f routines to optimize the fractional charge on each atom. The charges are used to determine the boundary 
-! conditions of the Hartree potential. Thus, the choice of the atomic size is not critical for the
+! conditions of the Hartree potential. Thus, the choice of the atomic size is not critical for the 
 ! KS-DFT calculations. 
   ```
   3. PS_DATA/    (directory that contains pseudopotential database [NCPS](http://www.bandstructure.jp/readmee.html))    
