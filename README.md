@@ -55,7 +55,7 @@ As a consequence, a lot of functions equipped on the original code have been dis
 
 # Usage
 The specification of the real-space cell containing the uniform grids is provided in the include file 'QMpara.i'. The form of the grid is assumed to be cubic in our implementation. 
-The grid width is defined by the cut off energy:COE in the input file 'qm.dat'. 
+The grid width is defined by the cut off energy:COE in the input file 'qm.dat'. Shown below is the 'QMpara.i' file for a HF-OEP calculation of a water molecule. 
 ```
 !     "QMpara.i"
 !     QM parameter set for Vmol package
