@@ -223,16 +223,16 @@ $FC $FFLAGS $ftrn_prgm.o oep.o poisson_solver.o -L$PFFT_DIR -lpfft -L$FFTW_DIR -
 
 # Output files
   The output file 'Vmol01-qm-hf-oep_mpi.out' in /examples/HF_OEP/ provides the computational settings and the energies of interest during the SCF procedure
-  for the HF-OEP calculation of a water molecule. After the convergence of the first SCF for the RHF method, the total energy is given by 
+  for the HF-OEP calculation of a water molecule. After the convergence of the first SCF calculation for the RHF method, the total energy is given by 
   
   ```
     Final Energy =   -16.8838097849969
   ```
-  in the atomic unit. Then, it is followed by the HF-OEP calculation to optimize the local HF exchange potential, which gives  
+  in the atomic unit. Then, it is followed by the HF-OEP SCF calculation to optimize the local HF exchange potential, which gives  
   ```
     Total OEP Energy (a.u.) =    -16.8814430
   ```
-  Thus, the energy difference between E(RHF) and E(HF-OEP) is found to be 2.37 mHartree, which shows an agreement with the value provided 
+  after 460 SCF iterations. Thus, the energy difference between E(RHF) and E(HF-OEP) is found to be 2.37 mHartree, which shows an agreement with the value provided 
   in Table I of Ref. [6] in the reference list described above.     
 
 # Citation
