@@ -236,7 +236,8 @@ $FC $FFLAGS $ftrn_prgm.o oep.o poisson_solver.o -L$PFFT_DIR -lpfft -L$FFTW_DIR -
   in Table I of Ref. [6] in the reference list described above.     
 
 # Notes
-  As noted above, to determine the boundary conditions of the Hartree potential, the fractional charge on each atom is optimized through a least-square fittings. To do this, the sampling points are randomly chosen from the grid points in the QM cell. Thus, the total energy will vary slightly from run to run because the sampling points change. However, we find that the difference E(HF-OEP)-E(RHF) is hardly affected.        
+  * As noted above, to determine the boundary conditions of the Hartree potential, the fractional charge on each atom is optimized through a least-square fittings. To do this, the sampling points are randomly chosen from the grid points in the QM cell. Thus, the total energy will vary slightly from run to run because the sampling points change. However, we find that the difference E(HF-OEP)-E(RHF) is hardly affected.
+  * For the preparation of the present release, the MM part in the original integrated code and the related routines have been excluded.  
 
 # Citation
   If your work incorporates any part of 'Vmol', please cite the following references:  
