@@ -152,7 +152,8 @@ Running 'Vmol' requires the following input files;
   3. PS_DATA/    (directory that contains pseudopotential database [NCPS](http://www.bandstructure.jp/readmee.html))    
   4. basis.dat   (LCAO basis set data for constructing initial guesses of the wave functions )
      The basis set data can be provided by conducting Gaussian16 program suite with an option 'gfinput'. The data will
-     be extracted from the Gaussian output file to form the 'basis.dat' file. 
+     be extracted from the Gaussian output file to form the 'basis.dat' file. When one uses 'aug-cc-pVTZ' basis set, you will have
+     the data starting with;    
      ```
            1 0    
       S   7 1.00       0.000000000000   
