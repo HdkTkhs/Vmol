@@ -212,10 +212,15 @@ $FC $FFLAGS $ftrn_prgm.o oep.o poisson_solver.o -L$PFFT_DIR -lpfft -L$FFTW_DIR -
   #! /bin/csh
   mpirun -machinefile machines -np $argv[1]  $argv[2] 
   ```
-  If you uses 16 CPUs for the parallel calculation, 
+  If you use 16 MPI processes for the parallel execution, submit the following　job script
   ```
   ./mpirun.exe 16 ./Vmol01-qm-hf-oep_mpi.exe > Vmol01-qm-hf-oep_mpi.out & 
   ```
+  with the machines file being 
+  ```
+  machine_name      cpu=16
+  ```
+
 # Output files
 
 # Citation
