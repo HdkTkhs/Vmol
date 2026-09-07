@@ -166,7 +166,7 @@ Running 'Vmol' requires the following input files;
       0.1676000000D+02  0.4426534455D+00      
       ........   
      ```
-  6. valence.dat (LCAO coefficients for constructing initial guesses of the wave functions )
+  6. valence.dat (LCAO coefficients for constructing initial guesses of the wave functions)  
      The LCAO coefficients for the basis set noted above can be obtained by
      invoking the option 'punch=mo' in the SCF calculation using Gaussian 16. Note that the data for
      the core electrons must be excluded.  
