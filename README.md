@@ -222,6 +222,12 @@ $FC $FFLAGS $ftrn_prgm.o oep.o poisson_solver.o -L$PFFT_DIR -lpfft -L$FFTW_DIR -
   ```
 
 # Output files
+  The output file 'Vmol01-qm-hf-oep_mpi.out' in /examples/HF_OEP/ provides the computational settings and the energies of interest during the SCF procedure
+  for the HF-OEP calculation of a water molecule. After the first SCF iteration for the RHF method, the total energy is given by 
+  
+  ```
+    Final Energy =   -16.8838097849969
+  ```
 
 # Citation
 If your work incorporates any part of 'Vmol', please cite the following references:  
