@@ -129,7 +129,7 @@ Running 'Vmol' requires the following input files;
  EXC   = 'RHF'      ! RHF calculation followed by HF-OEP
  NQMMM = 'QM'
  PRINT = 'LARGE'
- DGF   = 'DG4'      ! 4th-order Lagrange interpolation method is used in the double grid method
+ DGF   = 'DG4'      ! 4th-order Lagrange interpolation is used in the double grid method
  FREEZE= 'TRUE'
  NMRDF = 0 
  NLINK = 0 
@@ -138,7 +138,7 @@ Running 'Vmol' requires the following input files;
    1   0   0   8    6    5.788D0  2.8778D-4     0.000000    0.000000    0.223395 
    2   0   0   1    1    5.326D0  0.7869D-4     0.000000    1.427096   -0.893581
    3   0   0   1    1    5.326D0  0.7869D-4     0.000000   -1.427096   -0.893581
-
+      
 ! index  dummy dummy  # of electrons  # of val. electrons   sigma   epsilon    x   y   z
 
 ! Units are in atomic units.
@@ -179,7 +179,9 @@ Running 'Vmol' requires the following input files;
       0.00000000D+00-0.28189134D-02 0.97194357D-03 0.00000000D+00 0.00000000D+00  
      -0.36183378D-02 0.00000000D+00 0.36449177D-02 0.00000000D+00 0.00000000D+00  
       ........   
-     ``` 
+     ```
+     The files 'basis.dat' and 'valence.dat' are used exclusively to generate the initial guess wave functions
+     in subroutine 'trwf3.f'. These files can be omitted if another approach is employed. 
 
 # Compile and link
 Provided that the prerequisites noted above are fulfilled, 'Vmol' can be compiled and linked by invoking 
