@@ -151,6 +151,8 @@ Running 'Vmol' requires the following input files;
   ```
   3. PS_DATA/    (directory that contains pseudopotential database [NCPS](http://www.bandstructure.jp/readmee.html))    
   4. basis.dat   (LCAO basis set data for constructing initial guesses of the wave functions )
+     The basis set data can be provided by conducting Gaussian16 program suite with an option 'gfinput'. The data will
+     be extracted from the Gaussian output file to form the 'basis.dat' file. 
      ```
            1 0    
       S   7 1.00       0.000000000000   
@@ -159,8 +161,7 @@ Running 'Vmol' requires the following input files;
       0.5224000000D+03  0.2071282673D-01   
       0.1473000000D+03  0.8101055358D-01   
       0.4755000000D+02  0.2359629851D+00   
-      0.1676000000D+02  0.4426534455D+00   
-      0.6207000000D+01  0.3570644227D+00   
+      0.1676000000D+02  0.4426534455D+00      
       ........   
      ```
   6. valence.dat (LCAO coefficients for constructing initial guesses of the wave functions )
