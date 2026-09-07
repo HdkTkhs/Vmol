@@ -109,7 +109,7 @@ The include file 'mpi.i' specifies the numbers of divisions of the rectangular Q
       PARAMETER ( NY = 2 ) ! NY >= NZ
       PARAMETER ( NZ = 2 ) 
 ```
-Note that the definition of the subdomains is deeply related to the specification and requirement of the [poisson_solver.f90](https://github.com/shunsakuraba/poisson_solver).  
+Note that the definition of the subdomains is directly related to the specification and requirement of the [poisson_solver.f90](https://github.com/shunsakuraba/poisson_solver). See also the site of the poisson_solver.  
 
 # Input files
 Running 'Vmol' requires the following input files;
