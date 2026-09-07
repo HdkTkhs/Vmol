@@ -97,7 +97,17 @@ The specification of the real-space cell containing the uniform grids is provide
       character(*), PARAMETER :: PS_DIR = "/home3/takahasi/PS_DATA"     ! directory that contains pseudopotential database 'NCPS'
 ```
 
-The include file 'mpi.i' specifies the numbers of divisions of the rectangular QM cell along the x,y, and z directions to define subdomains for MPI parallel calculation.     
+The include file 'mpi.i' specifies the numbers of divisions of the rectangular QM cell along the x,y, and z directions to define subdomains for MPI parallel calculation. 
+```
+!     "mpi.i"
+!     parameters for mpi 
+
+!     NX,NY,NZ: numbers of divisions of the rectangular QM cell along the x,y, and z directions
+
+      PARAMETER ( NX = 4 ) ! NX  = 2  >= NY >= NZ
+      PARAMETER ( NY = 2 ) ! NY >= NZ
+      PARAMETER ( NZ = 2 ) 
+```
 
 
 # Input files
