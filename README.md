@@ -206,6 +206,14 @@ set BLAS_LAPACK="-mkl=parallel"
 $FC $FFLAGS $ftrn_prgm.o oep.o poisson_solver.o -L$PFFT_DIR -lpfft -L$FFTW_DIR -lfftw3 -lfftw3_mpi $BLAS_LAPACK -o $ftrn_prgm.exe
  rm -f *.o
 ```
+For the calculation in example/HF_OEP/ provided as an example, we used the intel compiler:
+```
+ifort (IFORT) 2021.6.0 20220226
+```
+and the CPU;
+```
+INTEL(R) XEON(R) SILVER 4514Y
+```
 # How to run Vmol
   Use the script 'mpirun.exe' in /examples/HF_OEP/.   
   ```
