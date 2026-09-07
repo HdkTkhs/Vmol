@@ -56,6 +56,7 @@ As a consequence, a lot of functions equipped on the original code have been dis
 # Usage
 The specification of the real-space cell containing the uniform grids is provided in the include file 'QMpara.i'. The form of the grid is assumed to be cubic in our implementation. 
 ```
+!     "QMpara.i"
 !     QM parameter set for Vmol package
 
 !     NNUC:    number of atoms
