@@ -138,7 +138,7 @@ set BLAS_LAPACK="-mkl=parallel"
  $FC -c $FFLAGS $ftrn_prgm.f
  $FC -c $FFLAGS oep.f
 #$FC -c $FFLAGS Vmol01-T-12-mm-mpi.f
-$FC $FFLAGS $ftrn_prgm.o oep.o poisson_solver.o -L$PFFT_DIR -lpfft -L$FFTW_DIR -lfftw3 -lfftw3_mpi $BLAS_LAPACK -o Vmol01-T-12-mpi.exe
+$FC $FFLAGS $ftrn_prgm.o oep.o poisson_solver.o -L$PFFT_DIR -lpfft -L$FFTW_DIR -lfftw3 -lfftw3_mpi $BLAS_LAPACK -o $ftrn_prgm.exe
  rm -f *.o
 ```
 
