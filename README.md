@@ -98,7 +98,7 @@ The grid width is defined by the cut off energy:COE in the input file 'qm.dat'. 
       character(*), PARAMETER :: PS_DIR = "/home3/takahasi/PS_DATA"     ! directory that contains pseudopotential database 'NCPS'
 ```
 
-The include file 'mpi.i' specifies the numbers of divisions of the rectangular QM cell along the x,y, and z directions to define subdomains for MPI parallel calculation. For example, for the parallel calculation with 16=4x2x2 CPUs, the 'mpi.i' file becomes,   
+The include file 'mpi.i' specifies the numbers of divisions of the rectangular QM cell along the x,y, and z directions to define subdomains for MPI parallel calculation. For example, for the parallel calculation with 16(=4x2x2) CPUs, the 'mpi.i' file becomes,   
 ```
 !     "mpi.i"
 !     parameters for mpi 
@@ -120,8 +120,27 @@ Running 'Vmol' requires the following input files;
 
 # Compile and link
 Provided that the prerequisites noted above are fulfilled, 'Vmol' can be compiled and linked by invoking 
-the script Compile.exe in Vmol_src/ .  
-```mpif90 -O -c -I/path/to/FFTW/include -I/path/to/pfft/include -std=f2003 poission_solver.F90```
+the script 'Compile_Vmol_oep.exe' in Vmol_src/.  
+```
+#!/bin/csh -e
+
+#Standard MPI + Intel compiler
+set FC="mpif90"
+set ftrn_prgm="Vmol01-qm-hf-oep_mpi"
+set FFLAGS="-save -O3 -xHost -extend-source -mcmodel=medium -shared-intel"
+set FFTW_INC="$HOME/opt/fftw/include"
+set FFTW_DIR="$HOME/opt/fftw/lib"
+set PFFT_INC="$HOME/opt/pfft/include"
+set PFFT_DIR="$HOME/opt/pfft/lib"
+set BLAS_LAPACK="-mkl=parallel"
+ 
+ $FC -c $FFLAGS -I$PFFT_INC -I$FFTW_INC poisson_solver.f90
+ $FC -c $FFLAGS $ftrn_prgm.f
+ $FC -c $FFLAGS oep.f
+#$FC -c $FFLAGS Vmol01-T-12-mm-mpi.f
+$FC $FFLAGS $ftrn_prgm.o oep.o poisson_solver.o -L$PFFT_DIR -lpfft -L$FFTW_DIR -lfftw3 -lfftw3_mpi $BLAS_LAPACK -o Vmol01-T-12-mpi.exe
+ rm -f *.o
+```
 
 # Output files
 
