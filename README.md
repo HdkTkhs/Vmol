@@ -3,53 +3,164 @@ Hideaki Takahashi,
 Tohoku University, 
 Sendai, Japan
 
-# Current distribution of Vmol
-'Vmol' is a software[1,2] written with Fortran for the electronic density-functional theory (DFT) based on the real-space grid formalism[3]. 
-'Vmol' was originally combined with codes (produced by third parties) for the classical molecular dynamics method to 
-build a QM/MM simulator[2]. However, in the current distribution, only the core of the 'Vmol' is being placed on GitHub. 
-Thus, only the original Kohn Sham-DFT[4] machinery has been extracted from the integrated code. As a consequence, a lot of 
-functions equipped on the code has been disabled. In the following, we listed several features of the present distribution.
+# MPI-parallelized Vmol
+'Vmol' is a code[1,2] written in Fortran for the electronic density-functional theory (DFT) calculation based on the real-space grid formalism[3]. 
+In the early stage of the development, 'Vmol' had been combined with classical molecular dynamics codes (produced by third parties) to 
+build a QM/MM simulator[2]. However, the current release only includes the original MPI-parallelized Kohn Sham-DFT[4] module extracted from the integrated code. Thus, the core programs of the 'Vmol' have been placed on GitHub. 
+As a consequence, a lot of functions equipped on the original code have been disabled. In the following, we listed several features of the present distribution.
 * Optimized-effective potential for Hartree-Fock method (HF-OEP)[5]  
   'Vmol' at the present distribution is specific to a parallelized HF-OEP calculation[6] using MPI libraries. 
-* For the parallel execution of HF calculation[7], f90 module: [poisson_solver.f90](https://github.com/shunsakuraba/poisson_solver) is to be invoked.
+* For the parallel execution of HF calculation[7], f90 module: [poisson_solver.f90](https://github.com/shunsakuraba/poisson_solver) is involved. 
 * The 'Vmol' on the GitHub is specifically edited to perform the HF calculation that is followed by HF-OEP. However, it can also be
   used for normal KS-DFT calculations with slight modifications of the code.  
-* The external subroutines and functions made by others were also excluded in the distribution. The names of the routines
+* The external subroutines and functions made by others were also excluded from the original code due to the copyright issues in the distribution. The names of the routines
   and the functions are provided below.
----------------------------------------------------------  
-[1] H. Takahashi, T. Hori, T. Wakabayashi, and T. Nitta, “Real space ab initio
-molecular dynamics simulations for the reactions of OH radical/OH anion
-with formaldehyde,” J. Phys. Chem. A 105, 4351 (2001).  
-[2] H. Takahashi, T. Hori, H. Hashimoto, and T. Nitta, “A hybrid QM/MM
-method employing real space grids for QM water in the TIP4P water solvents,”
-J. Comp. Chem. 22, 1252–1261 (2001).  
-[3] J. R. Chelikowsky, N. Troullier, and Y. Saad, “Finite-difference pseudopotential 
-method: electronic structure calculations without a basis,” Phys.
-Rev. Lett. 72, 1240–1243 (1994).  
-[4] W. Kohn and L. J. Sham, “Self-consistent equations including exchange
-and correlation effects,” Phys. Rev. 140, A1133–A1138 (1965).  
-[5] W. Yang and Q. Wu, “Direct method for optimized effective potentials in
-density-functional theory,” Phys. Rev. Lett. 89, 143002 (2002).    
-[6] H. Takahashi, “Comparison of optimized effective potential with inverse
-Kohn–Sham method for Hartree–Fock exchange energy,” J. Chem. Phys.
-161, 104108(11) (2024).  
-[7] H. Takahashi, S. Sakuraba, and A. Morita, “Large-scale parallel implementation 
-of Hartree−Fock exchange energy on real-space grids using
-3D-parallel fast Fourier transform,” J. Chem. Inf. Model 60, 1376–1389
-(2020).  
+  
+**References**  
+```
+[1] H. Takahashi, T. Hori, T. Wakabayashi, and T. Nitta, “Real space ab initio molecular dynamics simulations  
+    for the reactions of OH radical/OH anion with formaldehyde,”  J. Phys. Chem. A 105, 4351 (2001).  
+[2] H. Takahashi, T. Hori, H. Hashimoto, and T. Nitta, “A hybrid QM/MM method employing real space grids   
+    for QM water in the TIP4P water solvents,” J. Comp. Chem. 22, 1252–1261 (2001).  
+[3] J. R. Chelikowsky, N. Troullier, and Y. Saad, “Finite-difference pseudopotential method: electronic structure  
+    calculations without a basis,” Phys. Rev. Lett. 72, 1240–1243 (1994).  
+[4] W. Kohn and L. J. Sham, “Self-consistent equations including exchange and correlation effects,”  
+    Phys. Rev. 140, A1133–A1138 (1965).  
+[5] W. Yang and Q. Wu, “Direct method for optimized effective potentials in density-functional theory,”  
+    Phys. Rev. Lett. 89, 143002 (2002).    
+[6] H. Takahashi, “Comparison of optimized effective potential with inverse Kohn–Sham method for Hartree–Fock  
+    exchange energy,” J. Chem. Phys. 161, 104108(11) (2024).  
+[7] H. Takahashi, S. Sakuraba, and A. Morita, “Large-scale parallel implementation of Hartree−Fock  
+    exchange energy on real-space grids using 3D-parallel fast Fourier transform,”  
+    J. Chem. Inf. Model 60, 1376–1389 (2020).
+```
 
-# Prerequisite 
-* Compilation of 'Vmol' requires that [FFTW](https://www.fftw.org) and [pFFT](https://github.com/mpip/pfft) are being installed. 
-* Compilation of 'Vmol' requires Intel Math Kernel Libraries (MKL). 
-* At the end of the 'Vmol' source code, 'Vmol' includes 'ext_routines.f' file (not provided in the library), to incorporates the subroutines and functions
-  provided in 'Numerical Recipes' by William H. Press, et al (Cambridge University Press). Explicitly, it contains the following programs:
+# Prerequisites 
+* Compilation of 'Vmol' requires [FFTW](https://www.fftw.org) and [PFFT](https://github.com/mpip/pfft). 
+* Compilation of 'Vmol' requires Intel Math Kernel Libraries (MKL).
+* Execution of 'Vmol' requires pseudopotential database [NCPS](http://www.bandstructure.jp/readmee.html).
+* As indicated by an include sentence placed at the end of the 'Vmol' source code, 'ext_routines.f' file (**not** provided in the distribution due to the copyright issues) is required to incorporates the miscellaneous external subroutines and functions into 'Vmol'. The subroutines are those
+  provided in 'Numerical Recipes' by William H. Press, et al (Cambridge University Press). Explicitly, the following programs are required;
   1. LSFIT.f (Least-Square Fitting)
   2. GAUSSJ.f (matrix inversion using Gauss Jordan elimination)
   3. POLINT.f (Polynomial interpolation)
   4. DDPOLY.f (Evaluation of derivative of a given polynomial)
   5. POLCOE.f (Polynomial coefficients)
-  Most of these routines can be equivalently replaced by those included in MKL.   
+     
+  Most of these routines can be replaced with equivalent routines provided by e.g. MKL, and the rest can be readily developed by users. Anyway, the file 'ext_routines.f', which contains these routines, must be prepared by users. 
 * The file 'ext_routines.f' also includes functions: RANFQ.f and GAUSS.f. RANFQ.f generates random real numbers R(0<R<1), while GAUSS.f generates
-  random real numbers which forms a Gaussian distribution. RANFQ.f can be equivalently replaced by the intrinsic function 'random_number(r)' in Intel Fortran.
+  random real numbers which forms a Gaussian distribution. RANFQ.f can be equivalently replaced by the intrinsic function 'random_number(r)' in Intel Fortran. 
   GAUSS.f might be also replaced by a function in MKL. Note, however, that KS-DFT calculation does not use GAUSS.f. Thus, the processes related to GAUSS.f can
-  be safely omitted for the KS-DFT calculation.             
+  be safely omitted for the sole purpose to perform the KS-DFT calculation.
+
+# Usage
+The specification of the real-space cell containing the uniform grids is provided in the include file 'QMpara.i'. The form of the grid is assumed to be cubic in our implementation. 
+The grid width is defined by the cut off energy:COE in the input file 'qm.dat'. Shown below is the 'QMpara.i' file for a HF-OEP calculation of a water molecule. 
+```
+!     "QMpara.i"
+!     QM parameter set for Vmol package
+
+!     NNUC:    number of atoms
+!     NLINK1:  number of link ( hydrogen ) atoms for QM/MM simulations (disabled)
+!     NMAXX:   number of grid points along the x-axis, and similarly for the y- and z- axes.
+!     NDIM:    number of dimensions
+!     NORA:    total number of orbitals for alpha spin
+!     NORB:    total number of orbitals for beta spin
+!     MORA:    total number of occupied orbitals for alpha spin
+!     MORB:    total number of occupied orbitals for beta spin
+!     ITMAX:   maximum number of SCF iterations
+
+      integer*4 NNUC, NLINK1, NMAXX, NMAXY, NMAXZ, NDIM
+      integer*4 NORA, NORB, MORA, MORB, NBASIS, NCORE
+      integer*4 ITMAX
+      integer*4 NFUZZY
+      real*8 EPSOPT, EPSMD
+
+      PARAMETER ( NNUC =     3 ) 
+      PARAMETER ( NLINK1 =   0 ) 
+      PARAMETER ( NFUZZY =   3 )    ! number of fuzzy cells, usually NFUZZY = NNUC
+      PARAMETER ( NMAXX =  120 )
+      PARAMETER ( NMAXY =  120 )
+      PARAMETER ( NMAXZ =  120 )
+      PARAMETER ( NDIM =     3 ) 
+      PARAMETER ( NORA =    22 )
+      PARAMETER ( NORB =     1 )    ! set at 1 for spin-restricted calculations
+      PARAMETER ( MORA =     4 ) 
+      PARAMETER ( MORB =     1 )    ! set at 1 for spin-restricted calculations
+      PARAMETER ( NBASIS =  92 )    ! number of LCAO basis functions for constructing initial guesses 
+      PARAMETER ( NCORE =    2 )    ! number of core electrons
+      PARAMETER ( ITMAX =  300 )
+      PARAMETER ( EPSOPT= 5.0D-5 )
+      PARAMETER ( EPSMD = 5.0D-3 )
+
+      PARAMETER (maxatm = 16000)
+
+      character(*), PARAMETER :: PS_DIR = "/home3/takahasi/PS_DATA"     ! directory that contains pseudopotential database 'NCPS'
+```
+
+The include file 'mpi.i' specifies the numbers of divisions of the rectangular QM cell along the x,y, and z directions to define subdomains for MPI parallel calculation. For example, for the parallel calculation with 16(=4x2x2) CPUs, the 'mpi.i' file becomes,   
+```
+!     "mpi.i"
+!     parameters for mpi 
+
+!     NX,NY,NZ: numbers of divisions of the rectangular QM cell along the x,y, and z directions
+
+      PARAMETER ( NX = 4 ) ! NX  = 2  >= NY >= NZ
+      PARAMETER ( NY = 2 ) ! NY >= NZ
+      PARAMETER ( NZ = 2 ) 
+```
+Note that the definition of the subdomains is directly related to the specification and requirement of the poisson_solver. See also the site of the [poisson_solver.f90](https://github.com/shunsakuraba/poisson_solver).  
+
+# Input files
+Running 'Vmol' requires the following input files;
+  1. qm.dat      (computational settings, molecular specifications, etc)
+  ```
+  ```
+  3. PS_DATA/    (directory that contains pseudopotential database [NCPS](http://www.bandstructure.jp/readmee.html))    
+  4. basis.dat   (LCAO basis set data for constructing initial guesses of the wave functions )
+  5. valence.dat (LCAO coefficients for constructing initial guesses of the wave functions )
+
+# Compile and link
+Provided that the prerequisites noted above are fulfilled, 'Vmol' can be compiled and linked by invoking 
+the csh script 'Compile_Vmol_oep.exe' in Vmol_src/. Rewrite the script depending on your computational environment.   
+```
+#!/bin/csh -e
+
+#Standard MPI + Intel compiler
+set FC="mpif90"
+set ftrn_prgm="Vmol01-qm-hf-oep_mpi"
+set FFLAGS="-save -O3 -xHost -extend-source -mcmodel=medium -shared-intel"
+set FFTW_INC="$HOME/opt/fftw/include"
+set FFTW_DIR="$HOME/opt/fftw/lib"
+set PFFT_INC="$HOME/opt/pfft/include"
+set PFFT_DIR="$HOME/opt/pfft/lib"
+set BLAS_LAPACK="-mkl=parallel"
+ 
+ $FC -c $FFLAGS -I$PFFT_INC -I$FFTW_INC poisson_solver.f90
+ $FC -c $FFLAGS $ftrn_prgm.f
+ $FC -c $FFLAGS oep.f
+#$FC -c $FFLAGS Vmol01-T-12-mm-mpi.f
+$FC $FFLAGS $ftrn_prgm.o oep.o poisson_solver.o -L$PFFT_DIR -lpfft -L$FFTW_DIR -lfftw3 -lfftw3_mpi $BLAS_LAPACK -o $ftrn_prgm.exe
+ rm -f *.o
+```
+
+# Output files
+
+# Citation
+If your work incorporates any part of 'Vmol', please cite the following references:  
+
+```
+[1] H. Takahashi, T. Hori, T. Wakabayashi, and T. Nitta,  
+    “Real space ab initio molecular dynamics simulations for the reactions  
+    of OH radical/OH anion with formaldehyde,” J. Phys. Chem. A 105, 4351 (2001).  
+[2] H. Takahashi, T. Hori, H. Hashimoto, and T. Nitta,  
+    “A hybrid QM/MM method employing real space grids for QM water in the TIP4P
+    water solvents,” J. Comp. Chem. 22, 1252–1261 (2001).  
+[3] H. Takahashi, S. Sakuraba, and A. Morita,  
+    “Large-scale parallel implementation of Hartree−Fock exchange energy on real-space  
+    grids using 3D-parallel fast Fourier transform,” J. Chem. Inf. Model 60, 1376–1389 (2020).  
+[4] H. Takahashi,  
+    “Comparison of optimized effective potential with inverse Kohn–Sham method  
+    for Hartree–Fock exchange energy,” J. Chem. Phys. 161, 104108(11) (2024).  
+```
+
