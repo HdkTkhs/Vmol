@@ -10,7 +10,7 @@ build a QM/MM simulator[2]. However, the current release only includes the origi
 As a consequence, a lot of functions equipped on the original code have been disabled. In the following, we listed several features of the present distribution.
 * Optimized-effective potential for Hartree-Fock method (HF-OEP)[5]  
   'Vmol' at the present distribution is specific to a parallelized HF-OEP calculation[6] using MPI libraries. 
-* For the parallel execution of HF calculation[7], f90 module: [poisson_solver.f90](https://github.com/shunsakuraba/poisson_solver) is involved. 
+* For the parallel execution of HF calculations[7], the module [poisson_solver.f90](https://github.com/shunsakuraba/poisson_solver) is used. 
 * The 'Vmol' on the GitHub is specifically edited to perform the HF calculation that is followed by HF-OEP. However, it can also be
   used for normal KS-DFT calculations with slight modifications of the code.  
 * The external subroutines and functions made by others were also excluded from the original code due to the copyright issues in the distribution. The names of the routines
