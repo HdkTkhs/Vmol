@@ -180,8 +180,8 @@ Running 'Vmol' requires the following input files;
      -0.36183378D-02 0.00000000D+00 0.36449177D-02 0.00000000D+00 0.00000000D+00  
       ........   
      ```
-     The files 'basis.dat' and 'valence.dat' are used exclusively to generate the initial guess wave functions
-     in subroutine 'trwf3.f'. These files can be omitted if another approach is employed. 
+     The files 'basis.dat' and 'valence.dat' are used only to generate the initial guess wave functions
+     in subroutine 'trwf3.f'. Thus, these files can be omitted if another approach is available. 
 
 # Compile and link
 Provided that the prerequisites noted above are fulfilled, 'Vmol' can be compiled and linked by invoking 
