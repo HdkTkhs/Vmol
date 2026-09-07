@@ -116,7 +116,7 @@ Running 'Vmol' requires the following input files;
   1. qm.dat      (computational settings, molecular specifications, etc)
   ```
   $INIDAT
- COE   = 100.0      ! cut off energy
+ COE   = 100.0      ! cut off energy in atomic unit, which leads to the grid width = 
  NDEN  = 7          ! number of dense grids
  DTMD  = 41.3411054611601
  MDMAX = 35000
@@ -235,8 +235,11 @@ $FC $FFLAGS $ftrn_prgm.o oep.o poisson_solver.o -L$PFFT_DIR -lpfft -L$FFTW_DIR -
   after 460 SCF iterations. Thus, the energy difference between E(RHF) and E(HF-OEP) is found to be 2.37 mHartree, which shows an agreement with the value provided 
   in Table I of Ref. [6] in the reference list described above.     
 
+# Notes
+  As noted above, to determine the boundary conditions of the Hartree potential, the fractional charge on each atom is optimized through a least-square fittings. To do this, the sampling points are randomly chosen from the grid points in the QM cell.    
+
 # Citation
-If your work incorporates any part of 'Vmol', please cite the following references:  
+  If your work incorporates any part of 'Vmol', please cite the following references:  
 
 ```
 [1] H. Takahashi, T. Hori, T. Wakabayashi, and T. Nitta,  
