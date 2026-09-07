@@ -98,7 +98,7 @@ The grid width is defined by the cut off energy:COE in the input file 'qm.dat'.
       character(*), PARAMETER :: PS_DIR = "/home3/takahasi/PS_DATA"     ! directory that contains pseudopotential database 'NCPS'
 ```
 
-The include file 'mpi.i' specifies the numbers of divisions of the rectangular QM cell along the x,y, and z directions to define subdomains for MPI parallel calculation. 
+The include file 'mpi.i' specifies the numbers of divisions of the rectangular QM cell along the x,y, and z directions to define subdomains for MPI parallel calculation. For the parallel calculation with 16=4x2x2 CPUs, the 'mpi.i' file becomes,   
 ```
 !     "mpi.i"
 !     parameters for mpi 
