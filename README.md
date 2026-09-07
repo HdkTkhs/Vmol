@@ -115,6 +115,40 @@ Note that the definition of the subdomains is directly related to the specificat
 Running 'Vmol' requires the following input files;
   1. qm.dat      (computational settings, molecular specifications, etc)
   ```
+ $INIDAT
+ COE   = 100.0      ! cut off energy
+ NDEN  = 7          ! number of dense grids
+ DTMD  = 41.3411054611601
+ MDMAX = 35000
+ TEMP  = 300.0
+ NRVLC = 50
+ NCHK  = 5000
+ CONV  = 1.0D-5
+ NRST  = 'NEW'
+ NOPT  = 'ONE'
+ EXC   = 'RHF'      ! RHF calculation followed by HF-OEP
+ NQMMM = 'QM'
+ PRINT = 'LARGE'
+ DGF   = 'DG4'      ! 4th-order Lagrange interpolation method is used in the double grid method
+ FREEZE= 'TRUE'
+ NMRDF = 0 
+ NLINK = 0 
+ /
+ MMID,ZA,ZVAL,SIG,EPSQM    
+   1   0   0   8    6    5.788D0  2.8778D-4     0.000000    0.000000    0.223395 
+   2   0   0   1    1    5.326D0  0.7869D-4     0.000000    1.427096   -0.893581
+   3   0   0   1    1    5.326D0  0.7869D-4     0.000000   -1.427096   -0.893581
+
+!  index  dummy dummy  # of electrons  # of val. electrons   sigma   epsilon    x   y   z   
+
+! Units are in atomic units.
+
+! The LJ parameters are somewhat arbitrary because this is for one-point calculations at isolation.
+! However, the LJ-sigma parameters are used in the OPTFC.f or OPTFC1.f routines to optimize
+! the fractional charge on each atom. The charges are used to determine the boundary conditions of  
+! the Hartree potential. Thus, the choice of the atomic size is not critical for the 
+! KS-DFT calculations. 
+
   ```
   3. PS_DATA/    (directory that contains pseudopotential database [NCPS](http://www.bandstructure.jp/readmee.html))    
   4. basis.dat   (LCAO basis set data for constructing initial guesses of the wave functions )
@@ -122,7 +156,7 @@ Running 'Vmol' requires the following input files;
 
 # Compile and link
 Provided that the prerequisites noted above are fulfilled, 'Vmol' can be compiled and linked by invoking 
-the csh script 'Compile_Vmol_oep.exe' in Vmol_src/. Rewrite the script depending on your computational environment.   
+the csh script 'Compile_Vmol_oep.exe' in Vmol_src/. Edit the following script depending on your computational environment.   
 ```
 #!/bin/csh -e
 
