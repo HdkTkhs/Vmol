@@ -115,7 +115,7 @@ Note that the definition of the subdomains is directly related to the specificat
 Running 'Vmol' requires the following input files;
   1. qm.dat      (computational settings, molecular specifications, etc)
   ```
- $INIDAT
+  $INIDAT
  COE   = 100.0      ! cut off energy
  NDEN  = 7          ! number of dense grids
  DTMD  = 41.3411054611601
@@ -139,16 +139,15 @@ Running 'Vmol' requires the following input files;
    2   0   0   1    1    5.326D0  0.7869D-4     0.000000    1.427096   -0.893581
    3   0   0   1    1    5.326D0  0.7869D-4     0.000000   -1.427096   -0.893581
 
-!  index  dummy dummy  # of electrons  # of val. electrons   sigma   epsilon    x   y   z   
+! index  dummy dummy  # of electrons  # of val. electrons   sigma   epsilon    x   y   z
 
 ! Units are in atomic units.
 
-! The LJ parameters are somewhat arbitrary because this is for one-point calculations at isolation.
-! However, the LJ-sigma parameters are used in the OPTFC.f or OPTFC1.f routines to optimize
-! the fractional charge on each atom. The charges are used to determine the boundary conditions of  
-! the Hartree potential. Thus, the choice of the atomic size is not critical for the 
+! The LJ parameters are somewhat arbitrary because this input file is for one-point calculations 
+! at isolation. Note, however, the LJ-sigma parameters are used in the OPTFC.f or OPTFC1.f routines
+! to optimize the fractional charge on each atom. The charges are used to determine the boundary 
+! conditions of the Hartree potential. Thus, the choice of the atomic size is not critical for the
 ! KS-DFT calculations. 
-
   ```
   3. PS_DATA/    (directory that contains pseudopotential database [NCPS](http://www.bandstructure.jp/readmee.html))    
   4. basis.dat   (LCAO basis set data for constructing initial guesses of the wave functions )
