@@ -114,13 +114,15 @@ Note that the definition of the subdomains is directly related to the specificat
 # Input files
 Running 'Vmol' requires the following input files;
   1. qm.dat      (computational settings, molecular specifications, etc)
-  2. PS_DATA/    (directory that contains pseudopotential database [NCPS](http://www.bandstructure.jp/readmee.html))    
-  3. basis.dat   (LCAO basis set data for constructing initial guesses of the wave functions )
-  4. valence.dat (LCAO coefficients for constructing initial guesses of the wave functions )
+  ```
+  ```
+  3. PS_DATA/    (directory that contains pseudopotential database [NCPS](http://www.bandstructure.jp/readmee.html))    
+  4. basis.dat   (LCAO basis set data for constructing initial guesses of the wave functions )
+  5. valence.dat (LCAO coefficients for constructing initial guesses of the wave functions )
 
 # Compile and link
 Provided that the prerequisites noted above are fulfilled, 'Vmol' can be compiled and linked by invoking 
-the script 'Compile_Vmol_oep.exe' in Vmol_src/.  
+the csh script 'Compile_Vmol_oep.exe' in Vmol_src/. Rewrite the script depending on your computational environment.   
 ```
 #!/bin/csh -e
 
