@@ -135,9 +135,9 @@ Running 'Vmol' requires the following input files;
  NLINK = 0 
  /
  MMID,ZA,ZVAL,SIG,EPSQM    
-   1   0   0   8    6    5.788D0  2.8778D-4     0.000000    0.000000    0.223395 
-   2   0   0   1    1    5.326D0  0.7869D-4     0.000000    1.427096   -0.893581
-   3   0   0   1    1    5.326D0  0.7869D-4     0.000000   -1.427096   -0.893581
+   1   0   0   8    6    5.788D0  2.8778D-4     0.000000    0.000000    0.222088 
+   2   0   0   1    1    5.326D0  0.7869D-4     0.000000    1.432422   -0.888351
+   3   0   0   1    1    5.326D0  0.7869D-4     0.000000   -1.432422   -0.888351
       
 ! index  dummy dummy  # of electrons  # of val. electrons   sigma   epsilon    x   y   z
 
@@ -147,7 +147,8 @@ Running 'Vmol' requires the following input files;
 ! for one-point calculations at its isolation. Note, however, the LJ-sigma parameters are used in the OPTFC.f
 ! or OPTFC1.f routines to optimize the fractional charge on each atom. The charges are used to determine the boundary 
 ! conditions of the Hartree potential. Thus, the choice of the atomic size is not critical for the 
-! KS-DFT calculations. 
+! KS-DFT calculations.
+! H2O geometry was optimized at the levels of CCSD/aug-cc-pVTZ using Gaussian16. 
   ```
   3. PS_DATA/    (directory that contains pseudopotential database [NCPS](http://www.bandstructure.jp/readmee.html))    
   4. basis.dat   (LCAO basis set data for constructing initial guesses of the wave functions )  
