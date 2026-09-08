@@ -148,7 +148,7 @@ Running 'Vmol' requires the following input files;
 ! or OPTFC1.f routines to optimize the fractional charge on each atom. The charges are used to determine the boundary 
 ! conditions of the Hartree potential. Thus, the choice of the atomic size is not critical for the 
 ! KS-DFT calculations.
-! H2O geometry was optimized at the levels of CCSD/aug-cc-pVTZ using Gaussian16. 
+! H2O geometry was optimized at the levels of CCSD/[aug-cc-pVTZ](https://www.basissetexchange.org) using Gaussian16. 
   ```
   3. PS_DATA/    (directory that contains pseudopotential database [NCPS](http://www.bandstructure.jp/readmee.html))    
   4. 'basis.dat'   (LCAO basis set data for constructing initial guesses of the wave functions )  
