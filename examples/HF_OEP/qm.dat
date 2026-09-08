@@ -18,9 +18,10 @@
  NLINK = 0
  /
  MMID,ZA,ZVAL,SIG,EPSQM                                      
-   1   0   0   8    6    5.788D0  2.8778D-4     0.000000    0.000000    0.223395 
-   2   0   0   1    1    5.326D0  0.7869D-4     0.000000    1.427096   -0.893581
-   3   0   0   1    1    5.326D0  0.7869D-4     0.000000   -1.427096   -0.893581
+   1   0   0   8    6    5.788D0  2.8778D-4     0.000000    0.000000    0.222088 
+   2   0   0   1    1    5.326D0  0.7869D-4     0.000000    1.432422   -0.888351
+   3   0   0   1    1    5.326D0  0.7869D-4     0.000000   -1.432422   -0.888351
+
 
 ! index  dummy dummy  # of electrons  # of val. electrons   sigma   epsilon    x   y   z
 
@@ -32,4 +33,8 @@
 ! conditions of the Hartree potential. Thus, the choice of the atomic size is not critical for the
 ! KS-DFT calculations.
                   
+! H2O geometry was optimized by CCSD/aug-cc-pVTZ using Gaussian16. 
+
+
+
 
