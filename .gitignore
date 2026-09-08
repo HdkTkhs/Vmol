@@ -1,5 +1,6 @@
 *.o
 *.mod
+2026*
 CRD.DAT
 DNS.DAT
 ENE.DAT
