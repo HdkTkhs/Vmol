@@ -33,7 +33,7 @@
 ! conditions of the Hartree potential. Thus, the choice of the atomic size is not critical for the
 ! KS-DFT calculations.
                   
-! H2O geometry was optimized by CCSD/aug-cc-pVTZ using Gaussian16. 
+! H2O geometry was optimized at the levels of CCSD/aug-cc-pVTZ using Gaussian16. 
 
 
 
