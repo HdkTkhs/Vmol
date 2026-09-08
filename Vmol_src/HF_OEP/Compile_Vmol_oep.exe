@@ -1,0 +1,21 @@
+#!/bin/csh -e
+
+#Standard MPI + Intel compiler
+set FC="mpif90"
+set ftrn_prgm="Vmol01-qm-hf-oep_mpi"
+set FFLAGS="-save -O3 -xHost -extend-source -mcmodel=medium -shared-intel"
+set FFTW_INC="$HOME/opt/fftw/include"
+set FFTW_DIR="$HOME/opt/fftw/lib"
+set PFFT_INC="$HOME/opt/pfft/include"
+set PFFT_DIR="$HOME/opt/pfft/lib"
+set BLAS_LAPACK="-mkl=parallel"
+ 
+ $FC -c $FFLAGS -I$PFFT_INC -I$FFTW_INC poisson_solver.f90
+ $FC -c $FFLAGS $ftrn_prgm.f
+ $FC -c $FFLAGS oep.f
+#$FC -c $FFLAGS Vmol01-T-12-mm-mpi.f
+
+$FC $FFLAGS $ftrn_prgm.o oep.o poisson_solver.o -L$PFFT_DIR -lpfft -L$FFTW_DIR -lfftw3 -lfftw3_mpi $BLAS_LAPACK -o $ftrn_prgm.exe
+
+ rm -f *.o
+
