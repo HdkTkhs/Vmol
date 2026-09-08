@@ -20,4 +20,5 @@ oep_locx.f
 oep_yw_uhf.f
 oep_scf.f
 ext_routines.f
+hf-oep.out
 
