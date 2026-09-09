@@ -214,7 +214,7 @@ and the CPU:
 ```
 INTEL(R) XEON(R) SILVER 4514Y
 ```
-which consists of 16 cores. 
+which consists of 16 core CPUs. 
 
 # How to run Vmol
   Use the script 'mpirun.exe' in /examples/HF_OEP/.   
