@@ -1,5 +1,6 @@
 *.o
 *.mod
+2026*
 CRD.DAT
 DNS.DAT
 ENE.DAT
@@ -16,4 +17,10 @@ nps.dat
 ops.dat
 link.dat
 machines
-
+oep_locx.f
+oep_yw_uhf.f
+oep_scf.f
+ext_routines.f
+hf-oep.out
+Vmol01*.exe
+README
