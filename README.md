@@ -251,6 +251,9 @@ which consists of 16 cores.
   * As noted above, to determine the boundary conditions of the Hartree potential, the fractional charge on each atom is optimized through a least-square fittings. To do this, the sampling points are randomly chosen from the grid points in the QM cell. Thus, the total energy will vary slightly from run to run because the sampling points change. However, we find that the difference E(HF-OEP)-E(RHF) is hardly affected.
   * For this release, the MM part in the original integrated code and the related routines have been excluded. As a result, we found that calculations sometimes terminate with a 'NaN' error after RHF SCF convergence. Unfortunately, the source of this error is difficult to identify due to its poor reproducibility. Users are encouraged to follow the future updates for this issue.  
 
+# Disclaimer
+This software is provided "as is", without warranty of any kind. The authors are not responsible for any damage or incorrect calculation results caused by the use of this software.
+
 # Authors
   * Hideaki Takahashi ('Vmol01-qm-hf-oep_mpi.f', 'oep.f', 'trwf3.f', and include files)
   * Takumi Hori ('Vmol01-qm-hf-oep_mpi.f')
