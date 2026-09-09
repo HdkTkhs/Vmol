@@ -7,6 +7,19 @@
 ! 3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
 ! THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
+!
+!   References: 
+!
+!   W. Yang and Q. Wu, “Direct method for optimized effective potentials in density-functional theory,”  
+!   Phys. Rev. Lett. 89, 143002 (2002).    
+!
+!   H. Takahashi, “Comparison of optimized effective potential with inverse Kohn–Sham method for Hartree–Fock  
+!   exchange energy,” J. Chem. Phys. 161, 104108(11) (2024).  
+!
+!   H. Takahashi, S. Sakuraba, and A. Morita, “Large-scale parallel implementation of Hartree−Fock  
+!   exchange energy on real-space grids using 3D-parallel fast Fourier transform,”  
+!
+
 C---------------------------------------------------------------
 C
 C     SUBROUTINE LOCAL EXCHANGE POTENTIAL PROPOSED BY J.C.Slater

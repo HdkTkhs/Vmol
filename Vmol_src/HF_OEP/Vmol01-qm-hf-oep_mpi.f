@@ -17,11 +17,25 @@ C   BASED ON
 C
 C   SD( Steepest Descent ) METHOD
 C
-C   EMPLOYING REAL SPACE GRIDS
+C   EMPLOYING REAL-SPACE GRIDS
 C
 C  
-C   REFERENCE : Phys. Rev. Lett. 55 (1985) 2471
-C             : Phys. Rev. B.52 (1995) R1
+C   REFERENCES: 
+C
+C      J. R. Chelikowsky, N. Troullier, and Y. Saad,
+C         “Finite-difference pseudopotential method: electronic structure  
+C          calculations without a basis,” 
+C          Phys. Rev. Lett. 72, 1240–1243 (1994).  
+C
+C      H. Takahashi, T. Hori, T. Wakabayashi, and T. Nitta,
+C         “Real space ab initio molecular dynamics simulations  
+C          for the reactions of OH radical/OH anion with formaldehyde,” 
+C          J. Phys. Chem. A 105, 4351 (2001).  
+C
+C      H. Takahashi, T. Hori, H. Hashimoto, and T. Nitta,
+C         “A hybrid QM/MM method employing real space grids   
+C          for QM water in the TIP4P water solvents,”
+C          J. Comp. Chem. 22, 1252–1261 (2001).  
 C
 C   PROGRAMMED BY : H.TAKAHASHI ( Aug. ~1997 )      
 C
